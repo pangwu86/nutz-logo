@@ -1,0 +1,130 @@
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  @ca-size: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -@ca-size/2;
+  margin-top: -@ca-size/2;
+  width: @ca-size;
+  height: @ca-size;
+
+  .logo-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.hover {
+    cursor: pointer;
+  }
+}
+
+@logo-index: 100;
+@logo-top: 70px;
+@logo-left: 0px;
+
+.n-tail {
+  width: 100px;
+  height: 70px;
+  border-right: 17px solid #7DA7D9;
+  border-bottom-right-radius: 120px 90px;
+  position: absolute;
+  z-index: @logo-index + 10;
+  top: @logo-top - 130;
+  left: @logo-left;
+  transform-origin: bottom right;
+  transform: rotate(-90deg);
+}
+
+.n-head {
+  @body-width: 155px;
+  @body-height: 70px;
+  background: #7DA7D9;
+  position: absolute;
+  width: @body-width;
+  height: @body-height;
+  z-index: @logo-index + 1;
+  top: @logo-top; // 241
+  left: @logo-left;
+  border-top-left-radius: @body-width/2 @body-height;
+  border-top-right-radius: @body-width/2 @body-height;
+  transform-origin: top left;
+  transform: rotate(-30deg);
+}
+
+.n-body {
+  @body-width: 130px;
+  @body-height: 95px;
+  background: #898989;
+  position: absolute;
+  width: @body-width;
+  height: @body-height;
+  z-index: @logo-index;
+  top: @logo-top + 60;
+  left: @logo-left + 50;
+  border-bottom-left-radius: @body-width/2 @body-height;
+  border-bottom-right-radius: @body-width/2 @body-height;
+  transform-origin: top left;
+  transform: rotate(-30deg);
+}
+
+.n-lighting {
+  position: absolute;
+  &.top {
+    z-index: @logo-index + 6;
+    border-top: 50px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: none;
+    border-left: 20px solid #B95302;
+    top: @logo-top - 10;
+    left: @logo-left + 119;
+    transform-origin: top left;
+    transform: rotate(30deg);
+  }
+
+  &.bottom {
+    z-index: @logo-index + 5;
+    border-top: 15px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 20px solid #B95302;
+    hegiht: 0;
+    top: @logo-top + 14;
+    left: @logo-left + 120;
+    transform-origin: top left;
+    transform: rotate(30deg);
+  }
+}
+
+.n-lighting-back {
+  position: absolute;
+  &.top {
+    z-index: @logo-index + 4;
+    border-top: 65px solid transparent;
+    border-bottom: 19.5px solid transparent;
+    border-right: none;
+    border-left: 29px solid #ffffff;
+    top: @logo-top - 23;
+    left: @logo-left + 123;
+    transform-origin: top left;
+    transform: rotate(30deg);
+  }
+
+  &.bottom {
+    z-index: @logo-index + 3;
+    border-top: 19.5px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-right: 29px solid #ffffff;
+    top: @logo-top + 6;
+    left: @logo-left + 118;
+    transform-origin: top left;
+    transform: rotate(30deg);
+  }
+
+}
