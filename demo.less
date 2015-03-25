@@ -58,6 +58,12 @@ header {
   z-index: @logo-index + 10;
   top: @logo-top - 130;
   left: @logo-left;
+  -moz-transform-origin: bottom right;
+  -moz-transform: rotate(-90deg);
+  -ms-transform-origin: bottom right;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform-origin: bottom right;
+  -webkit-transform: rotate(-90deg);
   transform-origin: bottom right;
   transform: rotate(-90deg);
 }
@@ -74,6 +80,12 @@ header {
   left: @logo-left;
   border-top-left-radius: @body-width/2 @body-height;
   border-top-right-radius: @body-width/2 @body-height;
+  -moz-transform-origin: top left;
+  -moz-transform: rotate(-30deg);
+  -ms-transform-origin: top left;
+  -ms-transform: rotate(-30deg);
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-30deg);
   transform-origin: top left;
   transform: rotate(-30deg);
 }
@@ -90,12 +102,27 @@ header {
   left: @logo-left + 50;
   border-bottom-left-radius: @body-width/2 @body-height;
   border-bottom-right-radius: @body-width/2 @body-height;
+  -moz-transform-origin: top left;
+  -moz-transform: rotate(-30deg);
+  -ms-transform-origin: top left;
+  -ms-transform: rotate(-30deg);
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-30deg);
   transform-origin: top left;
   transform: rotate(-30deg);
 }
 
 .n-lighting {
   position: absolute;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+
   &.top {
     z-index: @logo-index + 6;
     border-top: 50px solid transparent;
@@ -104,8 +131,6 @@ header {
     border-left: 20px solid #B95302;
     top: @logo-top - 10;
     left: @logo-left + 119;
-    transform-origin: top left;
-    transform: rotate(30deg);
   }
 
   &.bottom {
@@ -116,13 +141,19 @@ header {
     hegiht: 0;
     top: @logo-top + 14;
     left: @logo-left + 120;
-    transform-origin: top left;
-    transform: rotate(30deg);
   }
 }
 
 .n-lighting-back {
   position: absolute;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
   &.top {
     z-index: @logo-index + 4;
     border-top: 65px solid transparent;
@@ -131,8 +162,6 @@ header {
     border-left: 29px solid #ffffff;
     top: @logo-top - 23;
     left: @logo-left + 123;
-    transform-origin: top left;
-    transform: rotate(30deg);
   }
 
   &.bottom {
@@ -142,8 +171,6 @@ header {
     border-right: 29px solid #ffffff;
     top: @logo-top + 6;
     left: @logo-left + 118;
-    transform-origin: top left;
-    transform: rotate(30deg);
   }
 
 }

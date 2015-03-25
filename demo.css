@@ -40,6 +40,12 @@ header a:hover {
   z-index: 110;
   top: -60px;
   left: 0px;
+  -moz-transform-origin: bottom right;
+  -moz-transform: rotate(-90deg);
+  -ms-transform-origin: bottom right;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform-origin: bottom right;
+  -webkit-transform: rotate(-90deg);
   transform-origin: bottom right;
   transform: rotate(-90deg);
 }
@@ -53,6 +59,12 @@ header a:hover {
   left: 0px;
   border-top-left-radius: 77.5px 70px;
   border-top-right-radius: 77.5px 70px;
+  -moz-transform-origin: top left;
+  -moz-transform: rotate(-30deg);
+  -ms-transform-origin: top left;
+  -ms-transform: rotate(-30deg);
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-30deg);
   transform-origin: top left;
   transform: rotate(-30deg);
 }
@@ -66,11 +78,25 @@ header a:hover {
   left: 50px;
   border-bottom-left-radius: 65px 95px;
   border-bottom-right-radius: 65px 95px;
+  -moz-transform-origin: top left;
+  -moz-transform: rotate(-30deg);
+  -ms-transform-origin: top left;
+  -ms-transform: rotate(-30deg);
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-30deg);
   transform-origin: top left;
   transform: rotate(-30deg);
 }
 .n-lighting {
   position: absolute;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 .n-lighting.top {
   z-index: 106;
@@ -80,8 +106,6 @@ header a:hover {
   border-left: 20px solid #B95302;
   top: 60px;
   left: 119px;
-  transform-origin: top left;
-  transform: rotate(30deg);
 }
 .n-lighting.bottom {
   z-index: 105;
@@ -91,11 +115,17 @@ header a:hover {
   hegiht: 0;
   top: 84px;
   left: 120px;
-  transform-origin: top left;
-  transform: rotate(30deg);
 }
 .n-lighting-back {
   position: absolute;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 .n-lighting-back.top {
   z-index: 104;
@@ -105,8 +135,6 @@ header a:hover {
   border-left: 29px solid #ffffff;
   top: 47px;
   left: 123px;
-  transform-origin: top left;
-  transform: rotate(30deg);
 }
 .n-lighting-back.bottom {
   z-index: 103;
@@ -115,6 +143,4 @@ header a:hover {
   border-right: 29px solid #ffffff;
   top: 76px;
   left: 118px;
-  transform-origin: top left;
-  transform: rotate(30deg);
 }
